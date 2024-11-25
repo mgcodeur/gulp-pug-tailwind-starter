@@ -1,0 +1,31 @@
+doctype html
+
+html(lang='en')
+
+    head
+        title Properia - Dashboard
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        |
+        |
+
+        // Favicon
+        include ../includes/dashboard/head/_favicon.pug
+
+        |
+        |
+
+        // App styles
+        link(rel='stylesheet', href='../../assets/css/app.css')
+
+        block head
+    body
+        block content
+
+        |
+        |
+
+        // App scripts
+        script(src='../../assets/js/app.js')
+
+        block scripts

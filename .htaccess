@@ -1,0 +1,7 @@
+<ifModule mod_rewrite.c>
+   RewriteEngine On
+   DirectoryIndex index.html
+   RewriteCond %{REQUEST_FILENAME} !\.(js|css|gif|jpg|jpeg|png|ico|swf|pdf|html|php|json|svg|webp)$
+   RewriteCond %{REQUEST_URI} !^index
+   RewriteRule ^([^.]+)$ $1.html [NC,L]
+</ifModule>

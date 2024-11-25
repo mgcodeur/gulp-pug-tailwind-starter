@@ -1,0 +1,64 @@
+{
+  "name": "properia",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Properia - Ultimate Real Estate Template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp prod",
+    "prod": "gulp prod",
+    "prepare": "husky",
+    "lint:fix": "eslint --fix . --ignore-path .gitignore",
+    "release": "standard-version",
+    "update:changelog": "auto-changelog -p"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.15.0",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "auto-changelog": "^2.5.0",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^7.0.6",
+    "eslint": "^8.57.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "globals": "^15.12.0",
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^5.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-purgecss": "^6.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "husky": "^9.1.6",
+    "imagemin-pngquant": "^10.0.0",
+    "lint-staged": "^15.2.10",
+    "log-symbols": "^7.0.0",
+    "postcss": "^8.4.49",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "sass": "~1.64.2",
+    "standard-version": "^9.5.0",
+    "tailwindcss": "^3.4.14"
+  },
+  "author": "Smartibox",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ],
+    "*.{json,scss,css}": [
+      "prettier --write"
+    ]
+  }
+}

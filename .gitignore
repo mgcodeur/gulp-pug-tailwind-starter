@@ -1,0 +1,10 @@
+dist
+build
+
+node_modules
+
+.vscode
+.idea
+
+yarn.lock
+pnpm-lock.yaml
